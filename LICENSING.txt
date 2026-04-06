@@ -1,0 +1,8 @@
+For M-code LaTeX Package see modifikovani_mcode_paket/license.txt.
+
+Files gn.m and dodatak/gn.m are licensed under the Non-Profit Open Software License 3.0,
+Copyright (c) 2023 Andrija Stamenković.
+
+Everything else in this project is licensed under the Expat MIT License.
+If a copyright notice is needed, the following is sufficient:
+Copyright (c) 2023 Andrija Stamenković and Jovana Savić

@@ -1,0 +1,5 @@
+Putanja na Windows-u za pakete za TeX Live je (ako se sve ostavi po defalt-u):
+C:\texlive\<godina verzije>\texmf-dist\tex\latex
+
+Nakon kopiranja foldera potrebno je da se u TeX Live Manager-u ažurira baza podataka.
+Kad se on otvori ide se na Actions, pa na Regenerate filename database.
