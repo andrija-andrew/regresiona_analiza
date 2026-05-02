@@ -25,7 +25,7 @@
 \usepackage{mcode}
 \usepackage{chngcntr}
 \usepackage{fancyhdr}
-\usepackage[unicode]{hyperref}
+\usepackage[unicode,hidelinks]{hyperref}
 
 \renewcommand{\contentsname}{Sadržaj}
 \renewcommand{\abstractname}{Rezime}
@@ -71,7 +71,7 @@
 	breakindent=14.4pt,
 	captionpos=b,
 	abovecaptionskip=10pt,
-	belowcaptionskip=10pt,
+	belowcaptionskip=10pt
 }
 
 \renewcommand{\lstlistingname}{Algoritam}
@@ -90,12 +90,10 @@
 \date{Septembar 2023.}
 
 \makeatletter
-\hypersetup
-{
+\hypersetup{
 	pdftitle={\@title},
 	pdfauthor={\@author},
-	hidelinks=true,
-	pdfstartview=FitH,
+	pdfstartview=FitH
 }
 \makeatother
 
@@ -183,9 +181,9 @@ Posmatraju se podaci o operacijama i učinku jedne avio kompanije.\ Oni se odnos
 
 Podaci su dati po mesecima počevši od Aprila 2014.\ pa do Februara 2023.\ fiskalne godine koja počinje u Aprilu.\ Veličina uzorka je $n = 119$.
 
-Gornjih sedam promenljivih su prikazane stubastim grafikonima na Slikama \ref{bar1}\,-\,\ref{bar7}, gde su njihove vrednosti date hronološki po mesecima.
+Gornjih sedam promenljivih su prikazane stubastim grafikonima na Slika-ma \ref{bar1}\,-\,\ref{bar7}, gde su njihove vrednosti date hronološki po mesecima.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar1}
@@ -193,42 +191,42 @@ Gornjih sedam promenljivih su prikazane stubastim grafikonima na Slikama \ref{ba
 	\label{bar1}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar2}
 	\caption{Broj sati letenja tokom meseca}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar3}
 	\caption{Broj pređenih kilometara u hiljadama tokom meseca}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar4}
 	\caption{Broj putnika tokom meseca}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar5}
 	\caption{Broj putničkih kilometara u hiljadama tokom meseca}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar6}
 	\caption{Broj kilometara dostupnih sedišta u hiljadama tokom meseca}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{bar7}
@@ -240,7 +238,7 @@ Aprila 2021.\ fiskalne godine je, zbog pandemije COVID-19, došlo do naglog pada
 
 Za date promenljive su nađeni srednja vrednost (aritmetička sredina), minimum, prvi kvartil, medijana (tj.\ drugi kvartil), treći kvartil, maksimum, moda sa njenom učestalošću pojavljivanja, popravljena varijansa (tj.\ disper-zija), popravljeno standardno odstupanje i međukvartilni opseg.\ Rezultati su, respektivno, dati na Slikama \ref{mean_arr}\,-\,\ref{iqr_arr} po kolonama, gde broj kolone odgovara rednom broju promenljive na listi sa početka ovog poglavlja.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{mean_arr}
@@ -248,70 +246,70 @@ Za date promenljive su nađeni srednja vrednost (aritmetička sredina), minimum,
 	\label{mean_arr}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{min_arr}
 	\caption{Minimum}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{quart1_arr}
 	\caption{Prvi kvartil}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{med_arr}
 	\caption{Medijana (tj.\ drugi kvartil)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{quart3_arr}
 	\caption{Treći kvartil}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{max_arr}
 	\caption{Maksimum}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{mode_arr}
 	\caption{Moda}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{freq_mode_arr}
 	\caption{Učestalost pojavljivanja mode}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{cvar_arr}
 	\caption{Popravljena varijansa (tj.\ disperzija)}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{cstdev_arr}
 	\caption{Popravljeno standardno odstupanje}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{iqr_arr}
@@ -323,7 +321,7 @@ Na primer, medijana četvrte promenljive, broj putnika, iznosi $1043708$. Što s
 
 Dodatno, izračunati su uzorački koeficijenti korelacije.\ Rezultati su prika-zani na \hyperref[Rho]{Slici \ref*{Rho}}, gde broj kolone, odnosno vrste, odgovara rednom broju promenljive na listi.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{Rho}
@@ -335,7 +333,7 @@ Na primer, uzoračka korelacija između prve i četvrte promenljive, tj.\ broja 
 
 Urađen je još i Pirsonov hi-kvadrat test da bi se ispitalo da li date pro-menljive imaju normalnu raspodelu.\ Rezultati su prikazani na \hyperref[HP]{Slici \ref*{HP}}, gde broj kolone odgovara rednom broju promenljive na listi.\ U prvom redu je broj prihvaćene hipoteze, gde broj $0$ znači da je prihvaćena nulta hipoteza, tj.\ da posmatrana promenljiva ima normalnu raspodelu, dok broj $1$ znači da je prihvaćena alternativna hipoteza, tj.\ da posmatrana promenljiva nema normalnu raspodelu, na nivou značajnosti $0.05$.\ U drugom redu je odgovarajuća $p$-vrednost.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{HP}
@@ -361,7 +359,7 @@ Ocene parametara $\beta_0$ i $\beta_1$ su dobijene metodom najmanjih kvadrata ko
 
 Dijagram rasipanja i regresiona prava su prikazani na \hyperref[jm]{Slici \ref*{jm}}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{jm}
@@ -375,7 +373,7 @@ Ispunjenost pretpostavke o homoskedastičnosti reziduala je ispitana pomoću stu
 
 Dijagram rasipanja reziduala posmatranog modela u odnosu na ocenu zavisne promenljive je prikazan na \hyperref[res_vs_fitted_jm]{Slici \ref*{res_vs_fitted_jm}}.\ Sa nje se takođe može primetiti heteroskedastičnost reziduala.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{res_vs_fitted_jm}
@@ -412,7 +410,7 @@ Tako je dobijena jednačina linearne regresije punog modela za procenat zauzetih
 
 Studentizovani Bruš-Peiganov test daje $p$-vrednost $2.8601\cdot 10^{-5}$, što je (strogo) manje od $0.05$, pa se na nivou poverenja $0.95$ zaključuje da su reziduali heteroskedastični.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.9784\textwidth]{res_vs_fitted}
@@ -448,7 +446,7 @@ Primenom studentizovanog Bruš-Peiganovog testa se dobija $p$-vrednost $1.2182\c
 
 Dijagram rasipanja reziduala redukovanog linearnog modela u odnosu na ocenu zavisne promenljive je prikazan na \hyperref[res_vs_fitted_red]{Slici \ref*{res_vs_fitted_red}}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{res_vs_fitted_red}
@@ -472,7 +470,7 @@ Pošto procenat zauzetih sedišta može da uzima vrednosti samo između $0$ i $1
 
 Jedna funkcija koja odgovara gornjem opisu je \[L(x) = \dfrac{100}{1 + e^{-x}},\] čija je skica grafika data na \hyperref[nlin]{Slici \ref*{nlin}}, gde je $y = L(x)$.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{nlin}
@@ -509,7 +507,7 @@ Dakle, jednačina nelinearne regresije jednostrukog modela za procenat zauzetih 
 
 Dijagram rasipanja i regresiona kriva su prikazani na \hyperref[jm_nlin]{Slici \ref*{jm_nlin}}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.98\textwidth]{jm_nlin}
@@ -563,7 +561,7 @@ Pored uslova da je moguće da se napravi model na trening skupu i on evaluira na
 
 Konkretno, veličina datog skupa podataka je $n = 119$, pa se uzimanjem, na slučajan način, približno $70\%$ podataka za trening skup dobija da je on veličine $n_{trening} = 83$, pa je veličina test skupa $n_{test} = 36$.\ Trening i testiranje, na istim podacima, je urađeno za svih sedam modela iz prethodnih poglavlja.\ Procedura je ponovljena $1000$ puta, a performanse predviđanja su ocenjene aritmetičkom sredinom srednjih kvadratnih grešaka na test skupovima.\ Dobijeni rezultati su prikazani na \hyperref[mean_MSE_test]{Slici \ref*{mean_MSE_test}} za svih sedam modela u redosledu njihovog pojavljivanja.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.68\textwidth]{mean_MSE_test}
@@ -586,7 +584,7 @@ Bitno je napomenuti da procenat podataka za trening skup, slučajnost pri njihov
 \setcounter{footnote}{0}
 
 Kako bi se predvidela efikasnost avio kompanije u popunjavanju dostupnih sedišta, posmatrana su sedam modela.\ Za sve njih su, između ostalog, nađene srednje kvadratne greške.\ Pored toga, kako bi se procenila njihova tačnost predviđanja, urađen je trening i testiranje gde je za ocenu performansi uzeta aritmetička sredina hiljadu srednjih kvadratnih grešaka.\ Prema tome, ima smisla uporediti ove rezultate.\ Oni su dati, na dve decimale, u \hyperref[tabela]{tabeli ispod} za svih sedam modela u redosledu njihovog pojavljivanja.\
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{center}
 \begin{tabular}{c c c c c c c c}
 \Xhline{3\arrayrulewidth}
@@ -654,7 +652,7 @@ Ispod je skripta pomoću koje je urađeno skoro sve vezano za regresiju u ovom p
 U ovom dodatku su dokazana neka od često korišćenih osnovnih tvrđenja o linearnoj regresiji.
 
 \begin{thm}\label{teorema}
-	Neka je $X$ matrica čije su kolone vektori $X_j$, $j\in \lbrace 1, 2, \dots , k\rbrace$, koji su uzorci nezavisnih promenljivih $x_j$, $j\in \lbrace 1, 2, \dots , k\rbrace$, za uzorak veličine $n$, vektor $y$ odgovarajući uzorak zavisne promenljive $Y$, $\varepsilon$ slučajna greška i $\beta = [\beta_1 ~\beta_2 ~\dots ~\beta_k ]^T$ vektor parametara linearnog modela \[Y = \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_k x_k + \varepsilon ,\] koji je ocenjen pomoću $\hat{y} = X\hat{\beta}$.\ Ako je rang matrice $X$ jednak $k$, onda postoji jedinstvena ocena $\hat{\beta}$ parametra $\beta$ dobijena metodom najmanjih kvadrata, tj.\ minimizacijom sume kvadrata reziduala \[RSS = \sum\limits_{i = 1}^{n} \hat{\varepsilon}^2_i ,\] gde je $\hat{\varepsilon}_i$ $i$-ta vrednost vektora reziduala $\hat{\varepsilon} = y - \hat{y}$, $i\in \lbrace 1, 2, \dots , n\rbrace$.\ Pritom važi \[\hat{\beta} = (X^T X)^{-1} X^T y.\]
+	Neka je $X$ matrica čije su kolone vektori $X_j$ koji su uzorci odgovarajućih nezavisnih promenljivih $x_j$, $j\in \lbrace 1, 2, \dots , k\rbrace$, za uzorak veličine $n$, vektor $y$ odgovarajući uzorak zavisne promenljive $Y$, $\varepsilon$ slučajna greška i $\beta = [\beta_1 ~\beta_2 ~\dots ~\beta_k ]^T$ vektor parametara linearnog modela \[Y = \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_k x_k + \varepsilon ,\] koji je ocenjen pomoću $\hat{y} = X\hat{\beta}$.\ Ako je rang matrice $X$ jednak $k$, onda postoji jedinstvena ocena $\hat{\beta}$ parametra $\beta$ dobijena metodom najmanjih kvadrata, tj.\ minimizacijom sume kvadrata reziduala \[RSS = \sum\limits_{i = 1}^{n} \hat{\varepsilon}^2_i ,\] gde je $\hat{\varepsilon}_i$ $i$-ta vrednost vektora reziduala $\hat{\varepsilon} = y - \hat{y}$, $i\in \lbrace 1, 2, \dots , n\rbrace$.\ Pritom važi \[\hat{\beta} = (X^T X)^{-1} X^T y.\]
 \end{thm}
 
 \begin{proof}
@@ -779,7 +777,7 @@ U ovom dodatku su dokazana neka od često korišćenih osnovnih tvrđenja o line
 \end{stav}
 
 \begin{proof}
-	Prema \hyperref[teorema]{Teoremi \ref*{teorema}} postoji jednistvena ocena $\hat{\beta_c}$ parametra $\beta_c$.\ Neka je $RSS_d$ suma kvadrata reziduala novodobijenog linearnog modela gde je za ocenu parametra $\beta_c$ uzet\! vektor $\hat{\beta}_d = [\hat{\beta}^T ~0]^T$.\ Tada je $X_c \hat{\beta}_d = X\hat{\beta}$, pa je $RSS_d = RSS$.\ S druge strane, zbog primene metode najmanjih kvadrata važi $RSS_c \leqslant RSS_d$, jer je \[RSS_c = \min_{\beta_c} (y - X_c \beta_c)^T (y - X_c \beta_c).\] Dakle, važi $RSS_c \leqslant RSS_d = RSS$.
+	Prema \hyperref[teorema]{Teoremi \ref*{teorema}} postoji jednistvena ocena $\hat{\beta_c}$ parametra $\beta_c$ dobijena metodom najmanjih kvadrata.\ Neka je $RSS_d$ suma kvadrata reziduala novodobijenog linearnog modela gde je za ocenu parametra $\beta_c$ uzet\! vektor $\hat{\beta}_d = [\hat{\beta}^T ~0]^T$.\ Tada je $X_c \hat{\beta}_d = X\hat{\beta}$, pa je $RSS_d = RSS$.\ S druge strane, zbog primene metode najmanjih kvadrata važi $RSS_c \leqslant RSS_d$, jer je \[RSS_c = \min_{\beta_c} (y - X_c \beta_c)^T (y - X_c \beta_c).\] Dakle, važi $RSS_c \leqslant RSS_d = RSS$.
 \end{proof}
 
 \begin{posl}\label{R2}
@@ -802,7 +800,7 @@ U ovom dodatku su dokazana neka od često korišćenih osnovnih tvrđenja o line
 \begin{thebibliography}{99}
 
 \bibitem{BrP}
-	T.\ S.\ Breusch, A.\ R.\ Pagan, \emph{A Simple Test for Heteroskedasticity and Random Coefficient Variation}, in \emph{Econometrica}, Wiley-Blackwell, \textbf{47}(5):1287–1294, 1979.\ \href{https://doi.org/10.2307/1911963}{doi:10.2307/1911963}.
+	T.\ S.\ Breusch, A.\ R.\ Pagan, \emph{A Simple Test for Heteroskedasticity and Random Coefficient Variation}, in \emph{Econometrica}, Wiley-Blackwell, \textbf{47}(5):1287–1294, 1979.\ doi:\href{https://doi.org/10.2307/1911963}{10.2307/1911963}.
 
 \bibitem{urlBr}
 	J.\ Brownlee, \emph{Train-Test Split for Evaluating Machine Learning Algorithms}, \url{https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/}.\ Accessed \href{https://web.archive.org/web/20230608114141/https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/}{18 Sep.\ 2023}.
@@ -814,19 +812,19 @@ U ovom dodatku su dokazana neka od često korišćenih osnovnih tvrđenja o line
 	M. Floater, \emph{Lecture 13: Non-linear least squares and the Gauss-Newton method}, \url{https://www.uio.no/studier/emner/matnat/math/MAT3110/h19/undervisningsmateriale/lecture13.pdf}.\ Accessed \href{https://web.archive.org/web/20230129044854/https://www.uio.no/studier/emner/matnat/math/MAT3110/h19/undervisningsmateriale/lecture13.pdf}{18 Sep.\ 2023}.
 
 \bibitem{Ko}
-	R.\ Koenker, \emph{A note on studentizing a test for heteroscedasticity}, in \emph{Journal of Econometrics}, Elsevier, \textbf{17}(1):107–112, 1981.\ \href{https://doi.org/10.1016/0304-4076(81)90062-2}{doi:10.1016/0304-4076(81)90062-2}.
+	R.\ Koenker, \emph{A note on studentizing a test for heteroscedasticity}, in \emph{Journal of Econometrics}, Elsevier, \textbf{17}(1):107–112, 1981.\ doi:\href{https://doi.org/10.1016/0304-4076(81)90062-2}{10.1016/0304-4076(81)90062-2}.
 
 \bibitem{LaC}
-	K.-L.\ Lai, J.\ L.\ Crassidis, \emph{Extensions of the first and second complex-step derivative approximations}, in \emph{Journal of Computational and App-lied Mathematics}, Elsevier, \textbf{219}(1):276–293, 2008.\ \href{https://doi.org/10.1016/j.cam.2007.07.026}{doi:10.1016/j.cam. 2007.07.026}.
+	K.-L.\ Lai, J.\ L.\ Crassidis, \emph{Extensions of the first and second complex-step derivative approximations}, in \emph{Journal of Computational and App-lied Mathematics}, Elsevier, \textbf{219}(1):276–293, 2008.\ doi:\href{https://doi.org/10.1016/j.cam.2007.07.026}{10.1016/j.cam. 2007.07.026}.
 
 \bibitem{Ri}
-	K.\ Rice, \emph{Sprint research runs into a credibility gap}, in \emph{Nature}, \textbf{432}:147, 2004.\ \href{https://doi.org/10.1038/432147b}{doi:10.1038/432147b}.
+	K.\ Rice, \emph{Sprint research runs into a credibility gap}, in \emph{Nature}, \textbf{432}:147, 2004.\ doi:\href{https://doi.org/10.1038/432147b}{10.1038/432147b}.
 
 \bibitem{Wa}
-	D.\ Waldman, \emph{A note on algebraic equivalence of White's test and a variation of the Godfrey/Breusch-Pagan test for heteroscedasticity}, in \emph{Economics Letters}, Elsevier, \textbf{13}(2–3):197–200, 1983.\ \href{https://doi.org/10.1016/0165-1765(83)90085-X}{doi:10.1016/0165-1765(83)90085-X}.
+	D.\ Waldman, \emph{A note on algebraic equivalence of White's test and a variation of the Godfrey/Breusch-Pagan test for heteroscedasticity}, in \emph{Economics Letters}, Elsevier, \textbf{13}(2–3):197–200, 1983.\ doi:\href{https://doi.org/10.1016/0165-1765(83)90085-X}{10.1016/0165-1765(83)90085-X}.
 
 \bibitem{Wh}
-	H.\ White, \emph{A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity}, in \emph{Econometrica}, Wiley-Blackwell, \textbf{48}(4):817-838, 1980.\ \href{https://doi.org/10.2307/1912934}{doi:10.2307/1912934}.
+	H.\ White, \emph{A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity}, in \emph{Econometrica}, Wiley-Blackwell, \textbf{48}(4):817-838, 1980.\ doi:\href{https://doi.org/10.2307/1912934}{10.2307/1912934}.
 
 \end{thebibliography}
 
